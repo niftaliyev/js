@@ -1,37 +1,85 @@
 #contextMenu {
-    position: absolute;
-    display: none;
-    width: 200px;
-    -webkit-box-shadow: 2px 2px 2px lightgray;
-            box-shadow: 2px 2px 2px lightgray;
-    background-color: peachpuff;
-  }
-  
-  #contextMenu ul {
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #contextMenu ul li {
-    cursor: pointer;
-    padding: 5px;
-  }
-  
-  #contextMenu ul li:hover {
-    background-color: rgb(189, 189, 189);
-  }
+  position: absolute;
+  display: none;
+  width: 200px;
+  -webkit-box-shadow: 2px 2px 2px lightgray;
+  box-shadow: 2px 2px 2px lightgray;
+  background-color: peachpuff;
+  z-index: 2;
+}
 
-  .done {
-    text-decoration: line-through;
-  }
-  .notdone {
-    text-decoration: none;
-  }
+ ul {
+
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+
+
+}
+
+#contextMenu ul li {
+  cursor: pointer;
+  padding: 5px;
+  z-index: 3;
+
+}
+
+#contextMenu ul li:hover {
+  background-color: rgb(189, 189, 189);
+}
+
+.done {
+  text-decoration: line-through;
+  color: red;
+}
+
+.notdone {
+  text-decoration: none;
+}
+
+.testStyle {
+  text-shadow: 2px 2px #ff0000;
+}
+
+h1 {
+  display: flex;
+  position: absolute;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+
+ul:hover {
+  cursor: pointer;
+
+
+}
+li{
+  padding-right: 9px;
+}
+#list{
+  position: absolute;
+  z-index: 3;
+  border: 3px solid black;
+  background-color: aquamarine;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+  background-color:rgb(75, 74, 74);
+}
